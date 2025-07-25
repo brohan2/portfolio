@@ -24,20 +24,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 min-h-screen">
-        <nav className="w-full border-b border-gray-200 bg-white shadow-sm">
-          <div className="container mx-auto flex items-center justify-between py-4 px-6">
-            <div className="text-2xl font-bold tracking-tight">My Portfolio</div>
-            <ul className="flex space-x-8 text-lg font-medium">
-              <li><a href="#about" className="hover:text-gray-500 transition">About</a></li>
-              <li><a href="#techstack" className="hover:text-gray-500 transition">Tech Stack</a></li>
-              <li><a href="#experience" className="hover:text-gray-500 transition">Experience</a></li>
-              <li><a href="#projects" className="hover:text-gray-500 transition">Projects</a></li>
-              <li><a href="#contact" className="hover:text-gray-500 transition">Contact</a></li>
+      <body className="bg-white text-black min-h-screen">
+        <nav className="w-full border-b border-gray-200 bg-white/90 shadow-md backdrop-blur-md rounded-b-xl">
+          <div className="container mx-auto flex flex-col items-center justify-center py-4 px-6">
+            {/* Removed the 'rohan' text from the top */}
+            <ul className="flex space-x-8 text-lg font-medium mt-2">
+              <li><a href="#about" className="hover:text-gray-700 transition">About</a></li>
+              <li><a href="#techstack" className="hover:text-gray-700 transition">Tech Stack</a></li>
+              <li><a href="#experience" className="hover:text-gray-700 transition">Experience</a></li>
+              <li><a href="#projects" className="hover:text-gray-700 transition">Projects</a></li>
+              <li><a href="#contact" className="hover:text-gray-700 transition">Contact</a></li>
             </ul>
           </div>
         </nav>
-        <main className="container mx-auto px-6 py-8">
+        <main className="container mx-auto px-6 py-8 bg-white">
           {children}
         </main>
       </body>
