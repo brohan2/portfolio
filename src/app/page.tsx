@@ -210,7 +210,6 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* Position of Responsibility Section */}
       <section id="responsibility" className="max-w-2xl mx-auto py-24 snap-start bg-gray-900 rounded-2xl shadow-lg p-8 mb-12">
         <h1 className="text-4xl mb-4 text-gray-100">Position of Responsibility</h1>
         <ul className="list-disc ml-6 text-gray-300 space-y-2">
